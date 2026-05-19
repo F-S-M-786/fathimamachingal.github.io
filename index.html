@@ -16,6 +16,7 @@ html{
 body{
     margin:0;
     font-family:'Montserrat',sans-serif;
+    background:white;
 }
 
 /* NAVBAR */
@@ -30,6 +31,7 @@ nav{
     position:sticky;
     top:0;
     z-index:1000;
+    border-bottom:1px solid #eee;
 }
 
 .logo{
@@ -135,6 +137,7 @@ section{
     border:1px solid #ddd;
     border-radius:10px;
     transition:0.3s;
+    background:white;
 }
 
 .card:hover{
@@ -161,65 +164,80 @@ section{
     transform:scale(1.05);
 }
 
-/* CONTACT SECTION (MODERN ICON STYLE) */
+/* ===================== */
+/* CONTACT (MODERN STYLE) */
+/* ===================== */
+
 #contact{
     background:#f9fafb;
-    padding:100px 20px;
+    padding:110px 20px;
     text-align:center;
 }
 
 #contact h2{
-    font-size:40px;
+    font-size:38px;
     margin-bottom:10px;
-    color:#2c3e50;
+    color:#1f2d3d;
+    font-weight:700;
 }
 
 #contact p{
     font-size:16px;
-    color:#555;
-    max-width:700px;
-    margin:10px auto 40px auto;
+    color:#666;
+    max-width:650px;
+    margin:0 auto 40px auto;
     line-height:1.6;
 }
 
-/* CONTACT CARDS */
-.contact-container{
+/* CONTACT WRAPPER */
+.contact-wrap{
     display:flex;
     justify-content:center;
     gap:20px;
     flex-wrap:wrap;
 }
 
-/* CARD STYLE */
-.contact-card{
+/* CONTACT CARD */
+.contact-item{
     display:flex;
     align-items:center;
     gap:12px;
     padding:14px 18px;
     background:white;
-    border-radius:12px;
+    border-radius:14px;
     text-decoration:none;
     color:#222;
     font-weight:600;
-    box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    box-shadow:0 8px 20px rgba(0,0,0,0.06);
     transition:0.3s;
     min-width:240px;
 }
 
-.contact-card:hover{
+.contact-item:hover{
     transform:translateY(-5px);
 }
 
-/* ICON BOX */
+/* ICON CIRCLE */
 .icon{
-    width:38px;
-    height:38px;
+    width:42px;
+    height:42px;
     border-radius:50%;
     display:flex;
     align-items:center;
     justify-content:center;
-    background:#eef3ff;
     font-size:18px;
+}
+
+/* EMAIL ICON */
+.email-icon{
+    background:#eef3ff;
+}
+
+/* ORCID ICON */
+.orcid-icon{
+    background:#a6ce39;
+    color:white;
+    font-weight:800;
 }
 
 /* FOOTER */
@@ -293,25 +311,25 @@ footer p{
 <!-- CONTACT -->
 <section id="contact">
 
-<h2>Let’s Connect</h2>
+<h2>Connect & Collaborate</h2>
 
 <p>
-I am always open to discussions in physics, especially astrophysics and astroparticle physics.
-Feel free to reach out for academic collaborations or research discussions.
+I am always open to academic discussions in astrophysics, astroparticle physics,
+and data-driven research. Feel free to reach out for collaborations or questions.
 </p>
 
-<div class="contact-container">
+<div class="contact-wrap">
 
     <!-- EMAIL -->
-    <a class="contact-card" href="mailto:shifamachingal@gmail.com">
-        <div class="icon">📧</div>
+    <a class="contact-item" href="mailto:shifamachingal@gmail.com">
+        <div class="icon email-icon">✉</div>
         <span>Email</span>
     </a>
 
     <!-- ORCID -->
-    <a class="contact-card" href="https://orcid.org/0009-0009-0954-6409" target="_blank">
-        <div class="icon">🧬</div>
-        <span>ORCID</span>
+    <a class="contact-item" href="https://orcid.org/0009-0009-0954-6409" target="_blank">
+        <div class="icon orcid-icon">iD</div>
+        <span>ORCID Profile</span>
     </a>
 
 </div>
