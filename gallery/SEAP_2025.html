@@ -16,27 +16,34 @@ body{
 header{
     background:white;
     padding:50px 20px;
-    text-align:center;
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    text-align:center;
 }
 
 h1{
     margin:0;
-    font-size:38px;
-    color:#222;
+    font-size:34px;
+    color:#111;
+}
+
+h2{
+    margin-top:10px;
+    font-weight:500;
+    color:#333;
 }
 
 p{
     color:#555;
-    font-size:18px;
-    margin-top:10px;
+    max-width:900px;
+    margin:10px auto;
+    line-height:1.6;
 }
 
-/* OFFICIAL LINK BUTTON */
+/* LINK BUTTON */
 a.link{
     display:inline-block;
-    margin-top:18px;
-    padding:12px 20px;
+    margin-top:15px;
+    padding:10px 18px;
     background:#2c8cff;
     color:white;
     text-decoration:none;
@@ -48,28 +55,25 @@ a.link:hover{
     background:#1a6fe0;
 }
 
-/* SECTION TITLE */
-h2{
+/* SECTION */
+section{
+    padding:50px 20px;
     text-align:center;
-    margin-top:50px;
-    font-size:28px;
 }
 
-/* GALLERY GRID (IMPORTANT UPGRADE) */
+/* IMAGE GRID */
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
     gap:20px;
-    padding:40px;
-    max-width:1100px;
-    margin:auto;
 }
 
 /* IMAGE CARD */
 .card{
     background:white;
+    padding:10px;
     border-radius:12px;
-    overflow:hidden;
     box-shadow:0 4px 12px rgba(0,0,0,0.08);
     transition:0.3s;
 }
@@ -78,19 +82,17 @@ h2{
     transform:scale(1.05);
 }
 
-/* IMAGE */
 .card img{
-    width:100%;
-    height:180px;
+    width:260px;
+    height:170px;
     object-fit:cover;
+    border-radius:10px;
 }
 
-/* CAPTION */
 .caption{
-    padding:10px;
+    margin-top:8px;
     font-weight:600;
     color:#333;
-    text-align:center;
 }
 
 </style>
@@ -101,77 +103,86 @@ h2{
 <!-- HEADER -->
 <header>
 
-<h1>SEAP 2025</h1>
+<h1>School on Experimental Astroparticle Physics (SEAP 2025)</h1>
 
-<p>Summer Exchange / Academic Program Experience</p>
+<h2>Cosmic Ray Laboratory, TIFR, Ooty</h2>
+
+<p>
+The School on Experimental Astroparticle Physics was held at the Cosmic Ray Laboratory,
+TIFR, Ooty from <b>March 9–13, 2025</b>.
+The program focused on cosmic rays, astroparticle physics, and experimental techniques.
+</p>
 
 <a class="link" href="https://scitalks.tifr.res.in/event/8985/overview" target="_blank">
-Visit Official Event Page
+Official Event Page
 </a>
 
 </header>
 
-<!-- GALLERY -->
-<h2>Gallery</h2>
+<!-- IMAGES -->
+
+<section>
 
 <div class="gallery">
 
 <div class="card">
     <img src="B.JPG">
-    <div class="caption">Moment 1</div>
+    <div class="caption">Event Image 1</div>
 </div>
 
 <div class="card">
     <img src="BB.JPG">
-    <div class="caption">Moment 2</div>
+    <div class="caption">Event Image 2</div>
 </div>
 
 <div class="card">
     <img src="BBB.JPG">
-    <div class="caption">Moment 3</div>
+    <div class="caption">Event Image 3</div>
 </div>
 
 <div class="card">
     <img src="BBBB.JPG">
-    <div class="caption">Moment 4</div>
+    <div class="caption">Event Image 4</div>
 </div>
 
 <div class="card">
     <img src="C.JPG">
-    <div class="caption">Moment 5</div>
+    <div class="caption">Event Image 5</div>
 </div>
 
 <div class="card">
     <img src="CC.JPG">
-    <div class="caption">Moment 6</div>
+    <div class="caption">Event Image 6</div>
 </div>
 
 <div class="card">
     <img src="CCC.JPG">
-    <div class="caption">Moment 7</div>
+    <div class="caption">Event Image 7</div>
 </div>
 
 <div class="card">
     <img src="CCCC.jpeg">
-    <div class="caption">Moment 8</div>
+    <div class="caption">Event Image 8</div>
 </div>
 
 <div class="card">
     <img src="D.jpeg">
-    <div class="caption">Moment 9</div>
+    <div class="caption">Event Image 9</div>
 </div>
 
 <div class="card">
     <img src="DD.jpeg">
-    <div class="caption">Moment 10</div>
+    <div class="caption">Event Image 10</div>
 </div>
 
 <div class="card">
     <img src="DDD.jpeg">
-    <div class="caption">Moment 11</div>
+    <div class="caption">Event Image 11</div>
 </div>
 
 </div>
+
+</section>
 
 </body>
 </html>
