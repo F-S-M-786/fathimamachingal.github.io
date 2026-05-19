@@ -8,7 +8,6 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      scroll-behavior: smooth;
     }
 
     /* HERO SECTION */
@@ -26,6 +25,7 @@
       position: relative;
     }
 
+    /* DARK OVERLAY */
     .hero::before {
       content: "";
       position: absolute;
@@ -40,6 +40,7 @@
       position: relative;
     }
 
+    /* PROFILE IMAGE */
     .profile {
       width: 160px;
       height: 160px;
@@ -49,11 +50,13 @@
       object-fit: cover;
     }
 
+    /* NAME */
     h1 {
       font-size: 50px;
       margin: 10px 0;
     }
 
+    /* SUBTITLE */
     p {
       font-size: 20px;
       margin-bottom: 20px;
@@ -76,56 +79,35 @@
       background: white;
       color: black;
     }
-
-    /* SECTIONS */
-    section {
-      padding: 80px 20px;
-      text-align: center;
-    }
-
-    #research {
-      background: #f4f4f4;
-    }
-
-    #contact {
-      background: #222;
-      color: white;
-    }
   </style>
 </head>
 
 <body>
 
-  <!-- HERO -->
   <div class="hero">
 
+    <!-- YOUR IMAGE -->
     <img class="profile" src="shifa.jpeg">
 
+    <!-- TEXT -->
     <h1>Hello, I'm Fathima Shifa</h1>
     <p>Physics Student | Research Enthusiast</p>
 
+    <!-- BUTTONS -->
     <div class="buttons">
-      <a href="#research">View Research</a>
 
-      <!-- DOWNLOAD CV -->
-      <a href="cv.pdf" download target="_blank">Download CV</a>
+      <a href="#">Research</a>
 
-      <a href="#contact">Contact</a>
+      <!-- CV DOWNLOAD BUTTON -->
+      <a href="cv.pdf" target="_blank" download>
+        Download CV
+      </a>
+
+      <a href="#">Contact</a>
+
     </div>
 
   </div>
-
-  <!-- RESEARCH SECTION -->
-  <section id="research">
-    <h2>Research</h2>
-    <p>Here you can add your physics research, papers, and projects.</p>
-  </section>
-
-  <!-- CONTACT SECTION -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@gmail.com</p>
-  </section>
 
 </body>
 </html>
