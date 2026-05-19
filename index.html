@@ -3,148 +3,154 @@
 <head>
 <meta charset="UTF-8">
 
-<title>Fathima Shifa Machingal</title>
+<title>Fathima Shifa</title>
 
-<!-- MODERN FONT -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
+html{scroll-behavior:smooth;}
+
 body{
-    margin:0;
-    font-family:'Montserrat',sans-serif;
+margin:0;
+font-family:'Montserrat',sans-serif;
 }
 
 /* NAVBAR */
 
 nav{
-    background:white;
-    height:78px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:0 90px;
-    box-sizing:border-box;
+background:white;
+height:80px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:0 80px;
+
+position:fixed;
+width:100%;
+box-sizing:border-box;
+z-index:1000;
 }
 
 .logo{
-    font-size:22px;
-    font-weight:700;
-    color:#263548;
+font-size:22px;
+font-weight:700;
 }
 
 nav ul{
-    list-style:none;
-    display:flex;
-    gap:38px;
-    margin:0;
-    padding:0;
+display:flex;
+gap:30px;
+list-style:none;
 }
 
 nav a{
-    text-decoration:none;
-    color:#222;
-    font-size:18px;
-    font-weight:500;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#2c8cff;
+text-decoration:none;
+color:#222;
 }
 
 /* HERO */
 
 .hero{
-    height:calc(100vh - 78px);
 
-    background-image:url('gem.png');
-    background-size:cover;
-    background-position:center;
+height:100vh;
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
+background-image:url('gem.png');
+background-size:cover;
+background-position:center;
 
-    text-align:center;
-    color:white;
-    position:relative;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+text-align:center;
+color:white;
+
+position:relative;
 }
 
 .hero::before{
-    content:"";
-    position:absolute;
-    inset:0;
-    background:rgba(0,0,0,0.45);
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0,0,0,0.45);
 }
 
 .hero>*{
-    position:relative;
+position:relative;
 }
-
-/* PROFILE */
 
 .profile{
-    width:175px;
-    height:175px;
-    border-radius:50%;
-    border:4px solid white;
-    object-fit:cover;
-    margin-bottom:22px;
+width:180px;
+height:180px;
+border-radius:50%;
+border:4px solid white;
+object-fit:cover;
 }
-
-/* MAIN TITLE */
 
 h1{
-    font-size:68px;
-    font-weight:800;
-    margin:10px 0 15px 0;
-    text-shadow:2px 2px 6px rgba(0,0,0,0.45);
+font-size:68px;
 }
 
-/* SUBTITLE */
-
-p{
-    font-size:22px;
-    font-weight:400;
-    margin-bottom:32px;
-    opacity:0.95;
+.hero p{
+font-size:22px;
 }
 
-/* BUTTONS */
+/* SECTIONS */
 
-.buttons a{
-    text-decoration:none;
-    color:white;
-
-    border:2px solid white;
-
-    padding:14px 28px;
-
-    margin:7px;
-
-    border-radius:4px;
-
-    display:inline-block;
-
-    font-size:18px;
-    font-weight:600;
-
-    transition:.3s;
+section{
+padding:90px 12%;
 }
 
-.buttons a:hover{
-    background:white;
-    color:black;
+.section-title{
+font-size:42px;
+margin-bottom:35px;
+}
+
+/* RESEARCH */
+
+.research-box{
+background:#f4f4f4;
+padding:30px;
+border-radius:12px;
+}
+
+/* GALLERY CARDS */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+border-radius:14px;
+
+box-shadow:
+0 4px 18px rgba(0,0,0,0.10);
+}
+
+.card a{
+text-decoration:none;
+color:#2c8cff;
+font-weight:600;
 }
 
 </style>
 </head>
 
 <body>
-
-<!-- NAVBAR -->
 
 <nav>
 
@@ -153,17 +159,28 @@ Fathima Shifa
 </div>
 
 <ul>
-<li><a href="#">Home</a></li>
-<li><a href="#">Research</a></li>
-<li><a href="#">Contact</a></li>
-<li><a href="cv.pdf" target="_blank">Download CV</a></li>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#research">Research</a></li>
+
+<li><a href="#gallery">Gallery</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+<li>
+<a href="cv.pdf" target="_blank">
+CV
+</a>
+</li>
+
 </ul>
 
 </nav>
 
-<!-- HERO SECTION -->
+<!-- HOME -->
 
-<div class="hero">
+<div class="hero" id="home">
 
 <img class="profile" src="shifa.jpeg">
 
@@ -171,17 +188,99 @@ Fathima Shifa
 
 <p>Physics Student | Research Enthusiast</p>
 
-<div class="buttons">
+</div>
 
-<a href="#">Research</a>
+<!-- RESEARCH -->
 
-<a href="cv.pdf" target="_blank">Download CV</a>
+<section id="research">
 
-<a href="#">Contact</a>
+<h2 class="section-title">
+Research
+</h2>
+
+<div class="research-box">
+
+<p>
+
+Write your research description here.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+<h2 class="section-title">
+
+Gallery
+
+</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>CERN Summer School</h3>
+
+<p>Geneva • 2025</p>
+
+<a href="gallery/cern/index.html">
+
+Open Gallery →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>IceCube School</h3>
+
+<p>South Dakota Mines • 2026</p>
+
+<a href="gallery/icecube/index.html">
+
+Open Gallery →
+
+</a>
+
+</div>
+
+<div class="card">
+
+<h3>IIT Workshop</h3>
+
+<p>Research Training Program</p>
+
+<a href="gallery/iit/index.html">
+
+Open Gallery →
+
+</a>
 
 </div>
 
 </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2 class="section-title">
+
+Contact
+
+</h2>
+
+<p>Email: your_email@example.com</p>
+
+</section>
 
 </body>
 </html>
