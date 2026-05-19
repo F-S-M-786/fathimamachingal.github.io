@@ -41,7 +41,7 @@ nav{
 nav ul{
     list-style:none;
     display:flex;
-    gap:38px;
+    gap:30px;
     margin:0;
     padding:0;
 }
@@ -49,7 +49,7 @@ nav ul{
 nav a{
     text-decoration:none;
     color:#222;
-    font-size:18px;
+    font-size:16px;
     font-weight:500;
 }
 
@@ -83,20 +83,17 @@ nav a:hover{
     position:relative;
 }
 
-/* PROFILE */
 .profile{
-    width:175px;
-    height:175px;
+    width:170px;
+    height:170px;
     border-radius:50%;
     border:4px solid white;
     object-fit:cover;
-    margin-bottom:22px;
+    margin-bottom:20px;
 }
 
-/* TEXT */
 h1{
-    font-size:60px;
-    font-weight:800;
+    font-size:55px;
     margin:10px 0;
 }
 
@@ -109,11 +106,10 @@ p{
     text-decoration:none;
     color:white;
     border:2px solid white;
-    padding:12px 25px;
-    margin:7px;
+    padding:12px 22px;
+    margin:6px;
     border-radius:5px;
     display:inline-block;
-    font-weight:600;
 }
 
 .buttons a:hover{
@@ -123,33 +119,46 @@ p{
 
 /* SECTIONS */
 section{
-    padding:100px 60px;
+    padding:90px 60px;
     text-align:center;
 }
 
 #research{
-    background:#f9f9f9;
-}
-
-#gallery{
-    background:#ffffff;
+    background:#f7f7f7;
 }
 
 .card{
     display:inline-block;
-    width:200px;
+    width:220px;
     padding:20px;
     margin:15px;
     border:1px solid #ddd;
     border-radius:10px;
     transition:0.3s;
-    text-decoration:none;
-    color:black;
 }
 
 .card:hover{
     transform:scale(1.05);
+}
+
+/* GALLERY BUTTONS */
+.gallery-card{
+    display:inline-block;
+    width:220px;
+    padding:25px;
+    margin:15px;
+    background:#fff;
+    border-radius:10px;
+    border:1px solid #ddd;
+    text-decoration:none;
+    color:black;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.gallery-card:hover{
     background:#f0f8ff;
+    transform:scale(1.05);
 }
 
 </style>
@@ -182,44 +191,37 @@ section{
 <div class="buttons">
 <a href="#research">Research</a>
 <a href="cv.pdf" target="_blank">Download CV</a>
-<a href="#contact">Contact</a>
+<a href="#gallery">Gallery</a>
 </div>
 
 </div>
 
 <!-- RESEARCH -->
 <section id="research">
-
 <h2>Research</h2>
-<p>I am interested in physics research, especially in astrophysics and experimental physics.</p>
 
-<div>
-<div class="card">Project 1<br>IceCube Analysis</div>
-<div class="card">Project 2<br>Muon Detection</div>
-<div class="card">Project 3<br>Data Modeling</div>
-</div>
+<div class="card">IceCube Analysis</div>
+<div class="card">Muon Detection</div>
+<div class="card">Data Modeling</div>
 
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-
 <h2>Gallery</h2>
-<p>Summer School Memories</p>
+<p>Summer School Experiences</p>
 
-<a class="card" href="gallery/school1.html">School 1</a>
-<a class="card" href="gallery/school2.html">School 2</a>
-<a class="card" href="gallery/school3.html">School 3</a>
+<a class="gallery-card" href="gallery/SEAP_2025.html">SEAP 2025</a>
+<a class="gallery-card" href="gallery/IAAS_2025.html">IAAS 2025</a>
+<a class="gallery-card" href="gallery/IITH_Workshop_2024.html">IITH Workshop 2024</a>
 
 </section>
 
 <!-- CONTACT -->
 <section id="contact">
-
 <h2>Contact</h2>
-<p>Email: yourname@gmail.com</p>
-<p>LinkedIn | Instagram | ResearchGate</p>
-
+<p>Email: yourmail@gmail.com</p>
+<p>LinkedIn | Instagram</p>
 </section>
 
 </body>
