@@ -1,107 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Fathima Shifa</title>
+<meta charset="UTF-8">
+<title>Fathima Shifa</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
+<style>
 
-    /* HERO SECTION */
-    .hero {
-      height: 100vh;
-      background-image: url('gem.png');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      color: white;
-      text-align: center;
-      position: relative;
-    }
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+}
 
-    /* DARK OVERLAY */
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0,0,0,0.4);
-    }
+/* NAVBAR */
 
-    .hero > * {
-      position: relative;
-    }
+nav{
+    background:white;
+    height:80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 80px;
+    box-sizing:border-box;
+}
 
-    /* PROFILE IMAGE */
-    .profile {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-      object-fit: cover;
-    }
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#222;
+}
 
-    h1 {
-      font-size: 50px;
-      margin: 10px 0;
-    }
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:35px;
+    margin:0;
+    padding:0;
+}
 
-    p {
-      font-size: 20px;
-      margin-bottom: 20px;
-      opacity: 0.9;
-    }
+nav a{
+    text-decoration:none;
+    color:#222;
+    font-size:18px;
+    transition:0.3s;
+}
 
-    /* BUTTONS */
-    .buttons a {
-      text-decoration: none;
-      padding: 10px 20px;
-      margin: 5px;
-      border: 2px solid white;
-      color: white;
-      border-radius: 5px;
-      transition: 0.3s;
-      display: inline-block;
-    }
+nav a:hover{
+    color:#0077ff;
+}
 
-    .buttons a:hover {
-      background: white;
-      color: black;
-    }
-  </style>
+/* HERO SECTION */
+
+.hero{
+    height:calc(100vh - 80px);
+    background-image:url('gem.png');
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    color:white;
+    text-align:center;
+    position:relative;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.45);
+}
+
+.hero>*{
+    position:relative;
+}
+
+/* PROFILE IMAGE */
+
+.profile{
+    width:170px;
+    height:170px;
+    border-radius:50%;
+    border:4px solid white;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+/* TEXT */
+
+h1{
+    font-size:60px;
+    margin:10px 0;
+}
+
+p{
+    font-size:22px;
+    margin-bottom:25px;
+}
+
+/* BUTTONS */
+
+.buttons a{
+    text-decoration:none;
+    color:white;
+    border:2px solid white;
+    padding:12px 22px;
+    margin:6px;
+    border-radius:6px;
+    display:inline-block;
+    transition:0.3s;
+}
+
+.buttons a:hover{
+    background:white;
+    color:black;
+}
+
+</style>
 </head>
 
 <body>
 
-  <div class="hero">
+<!-- TOP BAR -->
 
-    <!-- PROFILE IMAGE -->
-    <img class="profile" src="shifa.jpeg">
+<nav>
 
-    <!-- TEXT -->
-    <h1>Hello, I'm Fathima Shifa</h1>
-    <p>Physics Student | Research Enthusiast</p>
+<div class="logo">
+Fathima Shifa
+</div>
 
-    <!-- BUTTONS -->
-    <div class="buttons">
-      <a href="#">Research</a>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Research</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="cv.pdf" target="_blank">Download CV</a></li>
+</ul>
 
-      <!-- CV BUTTON (OPEN IN NEW TAB) -->
-      <a href="cv.pdf" target="_blank">Download CV</a>
+</nav>
 
-      <a href="#">Contact</a>
-    </div>
+<!-- HERO -->
 
-  </div>
+<div class="hero">
+
+<img class="profile" src="shifa.jpeg">
+
+<h1>Hello, I'm Fathima Shifa</h1>
+
+<p>Physics Student | Research Enthusiast</p>
+
+<div class="buttons">
+<a href="#">Research</a>
+<a href="cv.pdf" target="_blank">Download CV</a>
+<a href="#">Contact</a>
+</div>
+
+</div>
 
 </body>
 </html>
