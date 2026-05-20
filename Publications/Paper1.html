@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Search for Spatial Coincidence Between IceCube Neutrinos and Gamma-ray Bright Red Dwarfs</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<title>Red Dwarfs and IceCube Neutrinos</title>
 
 <style>
+
 body{
-    font-family:'Montserrat',sans-serif;
     margin:0;
-    background:#f7f7f7;
+    font-family:Montserrat, Arial, sans-serif;
+    background:#f6f7fb;
 }
 
+/* HEADER */
 header{
     background:white;
     padding:60px 20px;
@@ -21,44 +22,79 @@ header{
 }
 
 h1{
-    font-size:28px;
+    margin:0;
+    font-size:30px;
     color:#1f2d3d;
 }
 
-p{
-    max-width:800px;
-    margin:10px auto;
+h2{
+    margin-top:10px;
+    font-size:16px;
+    font-weight:500;
     color:#555;
-    line-height:1.6;
 }
 
-a.button{
-    display:inline-block;
+/* ABSTRACT */
+.abstract{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    text-align:left;
+    line-height:1.7;
+    color:#444;
+    font-size:15px;
+}
+
+/* BUTTONS */
+.buttons{
     margin-top:20px;
-    padding:10px 18px;
+}
+
+.btn{
+    display:inline-block;
+    margin:6px;
+    padding:12px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-blue{
     background:#2c8cff;
     color:white;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:600;
 }
 
-a.button:hover{
-    background:#1a6fe0;
+.btn-blue:hover{
+    background:#1d6fd8;
 }
 
-section{
-    text-align:center;
+.btn-dark{
+    background:#2c3e50;
+    color:white;
+}
+
+.btn-dark:hover{
+    background:#1a252f;
+}
+
+/* PDF */
+.pdf-section{
     padding:40px 20px;
+    text-align:center;
 }
 
 iframe{
-    width:80%;
-    height:600px;
+    width:90%;
+    height:750px;
     border:none;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    border-radius:10px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.15);
 }
+
 </style>
 </head>
 
@@ -66,23 +102,53 @@ iframe{
 
 <header>
 
-<h1>Search for spatial coincidence between IceCube neutrinos and gamma-ray bright red dwarfs</h1>
+<h1>Search for Spatial Coincidence Between IceCube Neutrinos and Gamma-ray Bright Red Dwarfs</h1>
 
-<p>
-We search for spatial coincidence between high-energy neutrinos detected by IceCube and gamma-ray bright red dwarfs using an unbinned maximum likelihood method. No statistically significant association is found, indicating these sources do not contribute to the diffuse IceCube neutrino flux.
-</p>
+<h2>Journal Publication (IceCube Neutrino Analysis)</h2>
 
-<a class="button" href="https://www.sciencedirect.com/science/article/abs/pii/S2214404825000473?via%3Dihub" target="_blank">
+<div class="buttons">
+
+<!-- OFFICIAL LINK -->
+<a class="btn btn-blue"
+href="https://www.sciencedirect.com/science/article/abs/pii/S2214404825000473?via%3Dihub"
+target="_blank">
 Official Publication Page
 </a>
 
-<a class="button" href="red.pdf" target="_blank">
+<!-- PDF -->
+<a class="btn btn-dark"
+href="red.pdf"
+target="_blank">
 View PDF
 </a>
 
+<!-- DOWNLOAD -->
+<a class="btn btn-blue"
+href="red.pdf"
+download>
+Download PDF
+</a>
+
+</div>
+
 </header>
 
-<section>
+<!-- ABSTRACT -->
+<section class="abstract">
+
+<b>Abstract</b>
+<br><br>
+
+We search for a spatial coincidence between high energy neutrinos detected by the IceCube neutrino detector and ten red dwarfs which have been observed in gamma-rays. For our analysis, we use the unbinned maximum likelihood method to look for a statistically significant excess.
+
+<br><br>
+
+We do not find any such spatial association between any of the red dwarfs and IceCube-detected neutrinos. Therefore, we conclude that none of the gamma-ray bright red dwarfs contribute to the diffuse neutrino flux measured by IceCube.
+
+</section>
+
+<!-- PDF VIEW -->
+<section class="pdf-section">
 
 <iframe src="red.pdf"></iframe>
 
