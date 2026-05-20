@@ -2,17 +2,20 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Search for Spatial Coincidence Between Magnetars and IceCube-Detected Neutrinos</title>
+
+<title>Magnetars and IceCube Neutrinos</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 body{
-    font-family:'Montserrat',sans-serif;
     margin:0;
-    background:#f7f7f7;
+    font-family:'Montserrat',sans-serif;
+    background:#f6f7fb;
 }
 
+/* HEADER */
 header{
     background:white;
     padding:60px 20px;
@@ -21,44 +24,79 @@ header{
 }
 
 h1{
+    margin:0;
     font-size:28px;
     color:#1f2d3d;
 }
 
-p{
-    max-width:800px;
-    margin:10px auto;
+h2{
+    margin-top:10px;
+    font-size:16px;
+    font-weight:500;
     color:#555;
-    line-height:1.6;
 }
 
-a.button{
-    display:inline-block;
+/* BUTTONS */
+.buttons{
     margin-top:20px;
-    padding:10px 18px;
+}
+
+.btn{
+    display:inline-block;
+    margin:6px;
+    padding:12px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-blue{
     background:#2c8cff;
     color:white;
-    text-decoration:none;
-    border-radius:6px;
-    font-weight:600;
 }
 
-a.button:hover{
-    background:#1a6fe0;
+.btn-blue:hover{
+    background:#1d6fd8;
 }
 
-section{
+.btn-dark{
+    background:#2c3e50;
+    color:white;
+}
+
+.btn-dark:hover{
+    background:#1a252f;
+}
+
+/* ABSTRACT */
+.abstract{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    text-align:left;
+    line-height:1.7;
+    color:#444;
+    font-size:15px;
+}
+
+/* PDF */
+.pdf-section{
     text-align:center;
     padding:40px 20px;
 }
 
 iframe{
-    width:80%;
-    height:600px;
+    width:90%;
+    height:750px;
     border:none;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
-    border-radius:10px;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.15);
 }
+
 </style>
 </head>
 
@@ -66,23 +104,61 @@ iframe{
 
 <header>
 
-<h1>Search for spatial coincidence between magnetars and IceCube detected neutrinos</h1>
+<h1>Search for Spatial Coincidence Between Magnetars and IceCube-Detected Neutrinos</h1>
 
-<p>
-We analyze spatial coincidence between IceCube neutrinos and 37 magnetars using unbinned maximum likelihood methods. No statistically significant association is found, and stacked analysis also shows no excess.
-</p>
+<h2>Journal Publication (IceCube Neutrino Analysis)</h2>
 
-<a class="button" href="https://www.sciencedirect.com/science/article/abs/pii/S2212686426000233?via%3Dihub" target="_blank">
+<div class="buttons">
+
+<!-- OFFICIAL LINK -->
+<a class="btn btn-blue"
+href="https://www.sciencedirect.com/science/article/abs/pii/S2212686426000233?via%3Dihub"
+target="_blank">
 Official Publication Page
 </a>
 
-<a class="button" href="mag.pdf" target="_blank">
+<!-- PDF -->
+<a class="btn btn-dark"
+href="mag.pdf"
+target="_blank">
 View PDF
 </a>
 
+<!-- DOWNLOAD -->
+<a class="btn btn-blue"
+href="mag.pdf"
+download>
+Download PDF
+</a>
+
+</div>
+
 </header>
 
-<section>
+<!-- ABSTRACT -->
+<section class="abstract">
+
+<b>Abstract</b>
+<br><br>
+
+We implement a search for spatial coincidence between high energy neutrinos detected by the IceCube neutrino detector and 37 magnetars, including six extragalactic sources.
+
+<br><br>
+
+We use the unbinned maximum likelihood method for our analysis. We do not find any statistically significant spatial association between any of the known magnetars and IceCube-detected neutrinos.
+
+<br><br>
+
+Therefore, we conclude that none of the known galactic or extragalactic magnetars contribute to the diffuse neutrino flux observed in IceCube.
+
+<br><br>
+
+A stacked analysis also does not show a statistically significant excess.
+
+</section>
+
+<!-- PDF VIEW -->
+<section class="pdf-section">
 
 <iframe src="mag.pdf"></iframe>
 
