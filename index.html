@@ -143,7 +143,7 @@ p{
     line-height:1.6;
 }
 
-/* CARDS (USED EVERYWHERE) */
+/* CARDS */
 .card,
 .gallery-card{
     display:inline-block;
@@ -165,7 +165,7 @@ p{
     transform:scale(1.05);
 }
 
-/* ALTERNATE BACKGROUND SECTIONS */
+/* ALTERNATE BACKGROUND */
 .alt-bg{
     background:#f7f7f7;
 }
@@ -277,7 +277,7 @@ footer p{
 <section id="research" class="section alt-bg">
 
 <h2>Research</h2>
-<p>My current work focuses on astroparticle physics, neutrino astronomy.</p>
+<p>My current work focuses on astroparticle physics and neutrino astronomy.</p>
 
 <div class="card">IceCube Analysis</div>
 <div class="card">Muon Detection</div>
@@ -301,19 +301,24 @@ Bachelor's Thesis
 
 </section>
 
-<!-- PUBLICATIONS -->
+<!-- PUBLICATIONS (FIXED) -->
 <section id="publications" class="section alt-bg">
 
 <h2>Publications</h2>
 <p>Peer-reviewed research articles and scientific contributions.</p>
 
+<!-- IMPORTANT: now STACKED (block style) -->
+<div style="display:flex; flex-direction:column; align-items:center; gap:20px;">
+
 <a class="gallery-card" href="Publications/Paper1.html" target="_blank">
-Neutrino–Red Dwarf Study
+Search for spatial coincidence between IceCube neutrinos and gamma-ray bright red dwarfs
 </a>
 
 <a class="gallery-card" href="Publications/paper2.html" target="_blank">
-Neutrino–Magnetar Study
+Search for spatial coincidence between magnetars and IceCube detected neutrinos
 </a>
+
+</div>
 
 </section>
 
