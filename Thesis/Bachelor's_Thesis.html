@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bachelor's Thesis</title>
 
+<style>
+
+body{
+    margin:0;
+    font-family:Montserrat, Arial, sans-serif;
+    background:#f6f7fb;
+}
+
+/* HEADER */
+header{
+    background:white;
+    padding:60px 20px;
+    text-align:center;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+}
+
+h1{
+    margin:0;
+    font-size:36px;
+    color:#1f2d3d;
+}
+
+h2{
+    margin-top:10px;
+    font-size:18px;
+    font-weight:500;
+    color:#555;
+}
+
+/* ABSTRACT CARD */
+.abstract{
+    max-width:900px;
+    margin:30px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    text-align:left;
+    line-height:1.7;
+    color:#444;
+    font-size:15px;
+}
+
+/* BUTTONS */
+.buttons{
+    margin-top:25px;
+}
+
+.btn{
+    display:inline-block;
+    margin:8px;
+    padding:12px 20px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.btn-blue{
+    background:#2c8cff;
+    color:white;
+}
+
+.btn-blue:hover{
+    background:#1d6fd8;
+}
+
+.btn-dark{
+    background:#2c3e50;
+    color:white;
+}
+
+.btn-dark:hover{
+    background:#1a252f;
+}
+
+/* PDF VIEW */
+.pdf-section{
+    padding:50px 20px;
+    text-align:center;
+}
+
+iframe{
+    width:90%;
+    height:850px;
+    border:none;
+    border-radius:12px;
+    box-shadow:0 5px 18px rgba(0,0,0,0.15);
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<h1>Bachelor’s Project Thesis</h1>
+
+<h2>Physics Undergraduate Research Project</h2>
+
+<div class="buttons">
+
+<!-- PDF OPEN -->
+<a class="btn btn-blue"
+href="project.pdf"
+target="_blank">
+
+View Thesis PDF
+</a>
+
+<!-- DOWNLOAD -->
+<a class="btn btn-dark"
+href="project.pdf"
+download>
+
+Download PDF
+</a>
+
+</div>
+
+</header>
+
+<!-- ABSTRACT -->
+<section class="abstract">
+
+<b>Abstract</b>
+<br><br>
+
+The spectrum of blazars is non-thermal in nature and extends from radio to gamma rays. The Spectral Energy Distribution (SED) of blazars typically shows a double-hump structure. The lower-energy hump is attributed to synchrotron emission, extending from radio to X-rays, while the higher-energy hump is explained by the inverse Compton mechanism.
+
+The electron distribution responsible for synchrotron emission follows a broken power-law behavior. Since an exact analytical expression for synchrotron emissivity is difficult to obtain, this project develops an approximate analytical solution.
+
+This approximation is used to study the relationship between physical parameters and the spectral energy distribution of blazars. The model is applied to the blazar Mkn 421 to estimate and constrain its physical parameters.
+
+</section>
+
+<!-- PDF EMBED -->
+<section class="pdf-section">
+
+<iframe src="project.pdf"></iframe>
+
+</section>
+
+</body>
+</html>
