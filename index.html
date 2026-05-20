@@ -20,7 +20,6 @@ body{
 }
 
 /* NAVBAR */
-
 nav{
     background:white;
     height:78px;
@@ -61,7 +60,6 @@ nav a:hover{
 }
 
 /* HERO */
-
 .hero{
     height:100vh;
     background-image:url('gem.png');
@@ -106,7 +104,6 @@ p{
 }
 
 /* BUTTONS */
-
 .buttons a{
     text-decoration:none;
     color:white;
@@ -122,36 +119,32 @@ p{
     color:black;
 }
 
-/* SECTIONS */
+/* ========================= */
+/* UNIFIED SECTION STYLE */
+/* ========================= */
 
-section{
+.section{
     padding:90px 60px;
     text-align:center;
 }
 
-#research{
-    background:#f7f7f7;
+.section h2{
+    font-size:38px;
+    margin-bottom:10px;
+    color:#1f2d3d;
+    font-weight:700;
 }
 
-/* RESEARCH CARDS */
-
-.card{
-    display:inline-block;
-    width:220px;
-    padding:20px;
-    margin:15px;
-    border:1px solid #ddd;
-    border-radius:10px;
-    transition:0.3s;
-    background:white;
+.section p{
+    font-size:16px;
+    color:#666;
+    max-width:750px;
+    margin:0 auto 30px auto;
+    line-height:1.6;
 }
 
-.card:hover{
-    transform:scale(1.05);
-}
-
-/* THESIS / GALLERY CARDS */
-
+/* CARDS (USED EVERYWHERE) */
+.card,
 .gallery-card{
     display:inline-block;
     width:220px;
@@ -166,32 +159,22 @@ section{
     transition:0.3s;
 }
 
+.card:hover,
 .gallery-card:hover{
     background:#f0f8ff;
     transform:scale(1.05);
 }
 
-/* CONTACT */
+/* ALTERNATE BACKGROUND SECTIONS */
+.alt-bg{
+    background:#f7f7f7;
+}
 
+/* CONTACT */
 #contact{
     background:#f9fafb;
     padding:110px 20px;
     text-align:center;
-}
-
-#contact h2{
-    font-size:38px;
-    margin-bottom:10px;
-    color:#1f2d3d;
-    font-weight:700;
-}
-
-#contact p{
-    font-size:16px;
-    color:#666;
-    max-width:650px;
-    margin:0 auto 40px auto;
-    line-height:1.6;
 }
 
 .contact-wrap{
@@ -241,7 +224,6 @@ section{
 }
 
 /* FOOTER */
-
 footer{
     background:#2c3e50;
     color:white;
@@ -281,7 +263,6 @@ footer p{
 <img class="profile" src="shifa.jpeg">
 
 <h1>Hello, I'm Fathima Shifa</h1>
-
 <p>Physics Student | Research Enthusiast</p>
 
 <div class="buttons">
@@ -293,9 +274,10 @@ footer p{
 </div>
 
 <!-- RESEARCH -->
-<section id="research">
+<section id="research" class="section alt-bg">
 
 <h2>Research</h2>
+<p>My current work focuses on astroparticle physics, neutrino astronomy, and data-driven analysis methods.</p>
 
 <div class="card">IceCube Analysis</div>
 <div class="card">Muon Detection</div>
@@ -304,71 +286,46 @@ footer p{
 </section>
 
 <!-- THESIS -->
-<section id="thesis">
+<section id="thesis" class="section">
 
 <h2>Thesis</h2>
-
 <p>Academic dissertations and research projects.</p>
 
-<!-- MASTER'S THESIS -->
-<a class="gallery-card"
-href="Thesis/Master's_Thesis.html"
-target="_blank">
-
+<a class="gallery-card" href="Thesis/Master's_Thesis.html" target="_blank">
 Master's Thesis
 </a>
 
-<!-- BACHELOR'S THESIS -->
-<a class="gallery-card"
-href="Thesis/Bachelor's_Thesis.html"
-target="_blank">
-
+<a class="gallery-card" href="Thesis/Bachelor's_Thesis.html" target="_blank">
 Bachelor's Thesis
 </a>
 
 </section>
+
 <!-- PUBLICATIONS -->
-<section id="publications">
+<section id="publications" class="section alt-bg">
 
 <h2>Publications</h2>
+<p>Peer-reviewed research articles and scientific contributions.</p>
 
-<p>Peer-reviewed research articles and conference publications.</p>
-
-<a class="gallery-card"
-href="Publications/Paper1.html"
-target="_blank">
-
-Neutrino–Red Dwarf Correlation Study
-
+<a class="gallery-card" href="Publications/Paper1.html" target="_blank">
+Neutrino–Red Dwarf Study
 </a>
 
-<a class="gallery-card"
-href="Publications/paper2.html"
-target="_blank">
-
-Neutrino–Magnetar Correlation Study
-
+<a class="gallery-card" href="Publications/paper2.html" target="_blank">
+Neutrino–Magnetar Study
 </a>
 
 </section>
+
 <!-- GALLERY -->
-<section id="gallery">
+<section id="gallery" class="section">
 
 <h2>Gallery</h2>
+<p>Summer School Experiences and academic events.</p>
 
-<p>Summer School Experiences</p>
-
-<a class="gallery-card" href="gallery/SEAP_2025.html">
-SEAP 2025
-</a>
-
-<a class="gallery-card" href="gallery/IAAS_2024.html">
-IAAS 2024
-</a>
-
-<a class="gallery-card" href="gallery/IITH_Workshop_2023.html">
-IITH Workshop 2023
-</a>
+<a class="gallery-card" href="gallery/SEAP_2025.html">SEAP 2025</a>
+<a class="gallery-card" href="gallery/IAAS_2024.html">IAAS 2024</a>
+<a class="gallery-card" href="gallery/IITH_Workshop_2023.html">IITH Workshop 2023</a>
 
 </section>
 
@@ -400,10 +357,8 @@ Feel free to reach out for collaborations or questions.
 
 <!-- FOOTER -->
 <footer>
-
 <p>© 2026 Fathima Shifa Machingal. All rights reserved.</p>
 <p>Physics | Astroparticle Physics | Research Enthusiast</p>
-
 </footer>
 
 </body>
