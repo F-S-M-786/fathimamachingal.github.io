@@ -20,6 +20,7 @@ body{
 }
 
 /* NAVBAR */
+
 nav{
     background:white;
     height:78px;
@@ -60,6 +61,7 @@ nav a:hover{
 }
 
 /* HERO */
+
 .hero{
     height:100vh;
     background-image:url('gem.png');
@@ -104,6 +106,7 @@ p{
 }
 
 /* BUTTONS */
+
 .buttons a{
     text-decoration:none;
     color:white;
@@ -120,6 +123,7 @@ p{
 }
 
 /* SECTIONS */
+
 section{
     padding:90px 60px;
     text-align:center;
@@ -128,6 +132,8 @@ section{
 #research{
     background:#f7f7f7;
 }
+
+/* RESEARCH CARDS */
 
 .card{
     display:inline-block;
@@ -144,7 +150,8 @@ section{
     transform:scale(1.05);
 }
 
-/* GALLERY */
+/* GALLERY + THESIS CARDS */
+
 .gallery-card{
     display:inline-block;
     width:220px;
@@ -164,9 +171,7 @@ section{
     transform:scale(1.05);
 }
 
-/* ===================== */
-/* CONTACT (MODERN STYLE) */
-/* ===================== */
+/* CONTACT */
 
 #contact{
     background:#f9fafb;
@@ -189,7 +194,6 @@ section{
     line-height:1.6;
 }
 
-/* CONTACT WRAPPER */
 .contact-wrap{
     display:flex;
     justify-content:center;
@@ -197,7 +201,6 @@ section{
     flex-wrap:wrap;
 }
 
-/* CONTACT CARD */
 .contact-item{
     display:flex;
     align-items:center;
@@ -217,7 +220,6 @@ section{
     transform:translateY(-5px);
 }
 
-/* ICON CIRCLE */
 .icon{
     width:42px;
     height:42px;
@@ -228,12 +230,10 @@ section{
     font-size:18px;
 }
 
-/* EMAIL ICON */
 .email-icon{
     background:#eef3ff;
 }
 
-/* ORCID ICON */
 .orcid-icon{
     background:#a6ce39;
     color:white;
@@ -241,6 +241,7 @@ section{
 }
 
 /* FOOTER */
+
 footer{
     background:#2c3e50;
     color:white;
@@ -259,18 +260,23 @@ footer p{
 <body>
 
 <!-- NAVBAR -->
+
 <nav>
+
 <div class="logo">Fathima Shifa Machingal</div>
 
 <ul>
 <li><a href="#home">Home</a></li>
 <li><a href="#research">Research</a></li>
+<li><a href="#thesis">Thesis</a></li>
 <li><a href="#gallery">Gallery</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
+
 </nav>
 
 <!-- HERO -->
+
 <div class="hero" id="home">
 
 <img class="profile" src="shifa.jpeg">
@@ -288,7 +294,9 @@ footer p{
 </div>
 
 <!-- RESEARCH -->
+
 <section id="research">
+
 <h2>Research</h2>
 
 <div class="card">IceCube Analysis</div>
@@ -297,48 +305,98 @@ footer p{
 
 </section>
 
+<!-- THESIS -->
+
+<section id="thesis">
+
+<h2>Thesis</h2>
+
+<p>Academic dissertations and research projects.</p>
+
+<a class="gallery-card"
+href="Thesis/FATHIMASHIFA_MScThesis_official-1-1.pdf"
+target="_blank">
+
+Master's Thesis
+
+</a>
+
+<a class="gallery-card"
+href="Thesis/Bachelor's_Thesis.html"
+target="_blank">
+
+Bachelor's Thesis
+
+</a>
+
+</section>
+
 <!-- GALLERY -->
+
 <section id="gallery">
+
 <h2>Gallery</h2>
+
 <p>Summer School Experiences</p>
 
-<a class="gallery-card" href="gallery/SEAP_2025.html">SEAP 2025</a>
-<a class="gallery-card" href="gallery/IAAS_2024.html">IAAS 2024</a>
-<a class="gallery-card" href="gallery/IITH_Workshop_2023.html">IITH Workshop 2023</a>
+<a class="gallery-card" href="gallery/SEAP_2025.html">
+SEAP 2025
+</a>
+
+<a class="gallery-card" href="gallery/IAAS_2024.html">
+IAAS 2024
+</a>
+
+<a class="gallery-card" href="gallery/IITH_Workshop_2023.html">
+IITH Workshop 2023
+</a>
 
 </section>
 
 <!-- CONTACT -->
+
 <section id="contact">
 
 <h2>Let’s Connect</h2>
 
 <p>
-I am always open to academic discussions in astrophysics, astroparticle physics. Feel free to reach out for collaborations or questions.
+I am always open to academic discussions in astrophysics and astroparticle physics.
+Feel free to reach out for collaborations or questions.
 </p>
 
 <div class="contact-wrap">
 
-    <!-- EMAIL -->
-    <a class="contact-item" href="mailto:shifamachingal@gmail.com">
-        <div class="icon email-icon">✉</div>
-        <span>Email</span>
-    </a>
+<a class="contact-item"
+href="mailto:shifamachingal@gmail.com">
 
-    <!-- ORCID -->
-    <a class="contact-item" href="https://orcid.org/0009-0009-0954-6409" target="_blank">
-        <div class="icon orcid-icon">iD</div>
-        <span>ORCID Profile</span>
-    </a>
+<div class="icon email-icon">✉</div>
+
+<span>Email</span>
+
+</a>
+
+<a class="contact-item"
+href="https://orcid.org/0009-0009-0954-6409"
+target="_blank">
+
+<div class="icon orcid-icon">iD</div>
+
+<span>ORCID Profile</span>
+
+</a>
 
 </div>
 
 </section>
 
 <!-- FOOTER -->
+
 <footer>
+
 <p>© 2026 Fathima Shifa Machingal. All rights reserved.</p>
+
 <p>Physics | Astroparticle Physics | Research Enthusiast</p>
+
 </footer>
 
 </body>
